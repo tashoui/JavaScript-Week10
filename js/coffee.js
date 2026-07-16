@@ -141,3 +141,6 @@ class IcedMocha extends Mocha {
         return `${this.mochaDesc()} Served over ${this.iceLevel} ice.`;
     }
 }
+
+//intantiate IcedMocha object
+let natashaIcedMocha = new IcedMocha("small", false, 2, "vanilla", "extra");
