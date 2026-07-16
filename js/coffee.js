@@ -114,7 +114,7 @@ class Mocha extends Coffee {
 
 //instantiate two mocha objects
 let natashaMocha = new Mocha("Large", false, 2, "caramel");
-let robertMocha = new Mocha("Medium", true, 1, "vanilla");
+let robertMocha = new Mocha("Medium", true, 1, "maple");
 
 //Call serveIt() on both objects
 natashaMocha.serveIt();
