@@ -108,7 +108,7 @@ class Mocha extends Coffee {
     }
 
     mochaDesc() {
-        return `A ${this.size} Mocha with ${shots} shot(s) of esspresso and ${this.syrupFlavour} syrup.`
+        return `A ${this.size} Mocha with ${this.shots} shot(s) of esspresso and ${this.syrupFlavour} syrup.`
     }
 }
 
@@ -119,3 +119,9 @@ let robertMocha = new Mocha("Medium", true, 1, "maple");
 //Call serveIt() on both objects
 natashaMocha.serveIt();
 robertCoffee.serveIt();
+
+//Call mochaDesc on both objects and display it on the page
+output.appendChild(document.createElement("br"));
+output.appendChild(document.createTextNode(natashaMocha.mochaDesc()));
+output.appendChild(document.createElement("br"));
+output.appendChild(document.createTextNode(robertMocha.mochaDesc()));
