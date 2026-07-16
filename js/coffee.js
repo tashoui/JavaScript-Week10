@@ -144,3 +144,8 @@ class IcedMocha extends Mocha {
 
 //intantiate IcedMocha object
 let natashaIcedMocha = new IcedMocha("small", false, 2, "vanilla", "extra");
+
+//Confirm serveIt() function still works from grandparent class
+natashaIcedMocha.serveIt();
+output.appendChild(document.createElement("br"));
+output.appendChild(document.createTextNode(natashaIcedMocha.icedMochaDesc()));
