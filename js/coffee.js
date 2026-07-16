@@ -125,3 +125,19 @@ output.appendChild(document.createElement("br"));
 output.appendChild(document.createTextNode(natashaMocha.mochaDesc()));
 output.appendChild(document.createElement("br"));
 output.appendChild(document.createTextNode(robertMocha.mochaDesc()));
+
+
+//Take it further: icedMocha
+class IcedMocha extends Mocha {
+    iceLevel;
+
+    constructor(size, isDecaf, shots, syrupFlavour, iceLevel) {
+        super(size, isDecaf, shots, syrupFlavour); 
+        this.iceLevel = iceLevel;
+    }
+
+    //Method for take it further subclass
+    icedMochaDesc() {
+        return `${this.mochaDesc()} Served over ${this.iceLevel} ice.`;
+    }
+}
